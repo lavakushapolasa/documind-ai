@@ -24,14 +24,19 @@ client = genai.Client(api_key=api_key)
 
 app = FastAPI(title="DocuMind AI")
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "http://localhost:5173", "http://localhost:5174"],
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "https://documind-ai-frontend-coral.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 documents = {}
 
