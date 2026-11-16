@@ -1,0 +1,22 @@
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+
+# Personal documents
+*.pdf
+
+# Editor files
+.vscode/
+.DS_Store
